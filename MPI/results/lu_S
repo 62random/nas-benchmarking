@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------
+[[20005,1],0]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: compute-662-2
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+
+
+ NAS Parallel Benchmarks (NPB3.3-MZ-MPI) - LU-MZ MPI+OpenMP Benchmark
+
+ Number of zones:   4 x   4
+ Iterations:  50    dt:   0.500000
+ Number of active processes:     1
+
+ Use the default load factors with threads
+
+ Calculated speedup =      1.00
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   50
+
+ Verification being performed for class S
+ Accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1   0.3778579699366E+01 0.3778579699366E+01 0.2244786290881E-13
+           2   0.3120418698064E+00 0.3120418698065E+00 0.2054704380276E-12
+           3   0.8386213407019E+00 0.8386213407018E+00 0.1384764764973E-12
+           4   0.4452165980489E+00 0.4452165980488E+00 0.1417651076500E-12
+           5   0.7808656756434E+01 0.7808656756434E+01 0.2115615927517E-13
+ Comparison of RMS-norms of solution error
+           1   0.2429480066305E+02 0.2429480066305E+02 0.2851553206690E-13
+           2   0.9072817470024E+01 0.9072817470024E+01 0.9789444377500E-14
+           3   0.1032621825644E+02 0.1032621825644E+02 0.4238670095466E-12
+           4   0.9256791727838E+01 0.9256791727838E+01 0.3051173082087E-13
+           5   0.1639045777714E+02 0.1639045777714E+02 0.2015821501882E-12
+ Comparison of surface integral
+               0.4964435445706E+02 0.4964435445706E+02 0.6626761295516E-13
+ Verification Successful
+
+
+ LU-MZ Benchmark Completed.
+ Class           =                        S
+ Size            =             24x   24x  6
+ Iterations      =                       50
+ Time in seconds =                     0.25
+ Total processes =                        1
+ Total threads   =                        1
+ Mop/s total     =                   187.52
+ Mop/s/thread    =                   187.52
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              06 Apr 2020
+
+ Compile options:
+    F77          = mpif77
+    FLINK        = $(F77)
+    F_LIB        = -lmpi
+    F_INC        = (none)
+    FFLAGS       = (none)
+    FLINKFLAGS   = (none)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
