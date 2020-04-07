@@ -10,7 +10,7 @@ classes=(A S W)
 
 # Get user and number of threads available
 user=$(whoami)
-nthreads=$(cat /proc/cpuinfo | grep proc | wc -l)
+nthreads=1 # $(cat /proc/cpuinfo | grep proc | wc -l)
 
 # Delete old results
 cd /home/$user/ESC/MPI
