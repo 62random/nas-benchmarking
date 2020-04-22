@@ -14,7 +14,8 @@ else:
 
 with open(os.path.join(os.getcwd(), OUTPUT_FILE), 'w+') as output: # open in readonly mode
     output.write("exec;mopsTotal;mopsThread;time;\n")
-    for filename in os.listdir(os.getcwd()):
+    lsorted = sorted(os.listdir(os.getcwd(),key=lambda x: int(os.path.splitext(x)[0])))
+    for filename in lsorted:
         if filename != "script.py" and filename!=OUTPUT_FILE and (not filename.endswith(".txt")):
             if CONTAINS_ARGS in filename:
                 with open(os.path.join(os.getcwd(), filename), 'r') as f: # open in readonly mode
